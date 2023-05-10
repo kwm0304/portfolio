@@ -27,7 +27,7 @@ function App() {
     <div className=''>
     <div className="grid grid-cols-3 items-center text-gray-600 p-0 m-0 dark:bg-gray-800 pt-4 xl:pb-12 xs:pb-2">
       <div className='COL1 '>
-        <button onClick={handleThemeSwitch}>{theme === 'dark' ? <BsSunFill className='xs:text-xl md:text-3xl lg:text-3xl xl:text-3xl xl:ml-8 xs:ml-4 text-cyan-400 hover:scale-110 hover:text-cyan-300 hover:text-white'/> : <BsMoonFill className='xs:text-xl dark:hover:text-white xl:text-3xl ml-8 hover:scale-110 hover:text-gray-700' />}</button>
+        <button onClick={handleThemeSwitch}>{theme === 'dark' ? <BsSunFill className='xs:text-3xl md:text-3xl lg:text-3xl xl:text-3xl xl:ml-8 xs:ml-4 text-cyan-400 hover:scale-110 hover:text-cyan-300 hover:text-white'/> : <BsMoonFill className='xs:text-xl dark:hover:text-white xl:text-3xl ml-8 hover:scale-110 hover:text-gray-700' />}</button>
       </div>
       <div className="COL2 grid grid-cols-1 justify-content-center  text-center">
         <h1 className={theme === 'dark' ? 'neon' : 'xl:text-6xl lg:text-5xl md:text-3xl heading font-sans xs:text-lg'}>Kenan McKenzie</h1>

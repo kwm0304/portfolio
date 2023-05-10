@@ -92,9 +92,9 @@ const Carousel = () => {
       <a href={`${slides[currentIndex].sourceUrl}`} target='_blank' rel='noReferrer'><button className='shadow-lg dark:bg-gray-800 bg-white relative rounded-lg w-full py-2 uppercase dark:group-hover:text-cyan-400 group-hover:scale-110 hover:font-semibold dark:hover:dark:text-cyan-300'>Source</button></a>
       </div>
     </div>
-    <div className='xl:h-[500px] xs:h-[300px] w-5/6 mx-auto rounded-lg dark:bg-gray-800 bg-white text-center'>
-      <h3 className='xl:text-2xl xl:mt-4 xs:mt-1 uppercase font-semibold text-gray-600 dark:text-lime-400'>{slides[currentIndex].title}</h3>
-      <p className='mt-8 mx-8'>{slides[currentIndex].description}</p>
+    <div className='xl:h-[500px] xs:h-[300px] w-5/6 mx-auto rounded-lg dark:bg-gray-800 bg-white text-center overflow-auto'>
+      <h3 className='xl:text-2xl xl:mt-4 xs:mt-1 uppercase font-semibold text-gray-600 dark:text-lime-400 overflow-auto'>{slides[currentIndex].title}</h3>
+      <p className='mt-8 mx-8 overflow-auto'>{slides[currentIndex].description}</p>
     </div>
     <div className='w-5/6 rounded-lg grid grid-cols-4  xl:gap-4 xs:gap-2 xs:py-3 justify-items-center  content-center bg-white dark:bg-gray-800 dark:text-lime-400  xs:text-base xl:text-xl'>
       {slides[currentIndex].tags.map((tag, index) => (
