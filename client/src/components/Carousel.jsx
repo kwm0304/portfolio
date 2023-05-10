@@ -73,11 +73,11 @@ const Carousel = () => {
     <div className='w-5/6 rounded-lg grid grid-cols-1 gap-2 justify-items-center'>
       <div className="BTN relative group w-full">
         <div className="NEON dark:absolute dark:-inset-0.5 rounded-lg blur opacity-75 duration-1000 group-hover:duration-200 bg-gradient-to-r from-blue-600 to-cyan-300 group-hover:scale-110 hover:font-semibold hover:dark:text-cyan-300 group-hover:opacity-100"></div>
-        <a href={`${slides[currentIndex].visitUrl}`} target='_blank' ><button className='shadow-lg dark:bg-gray-800 bg-white relative rounded-lg w-full py-2 uppercase dark:group-hover:text-cyan-400 group-hover:scale-110 hover:font-semibold hover:dark:text-cyan-300'>Visit</button></a>
+        <a href={`${slides[currentIndex].visitUrl}`} target='_blank' rel='noReferrer'><button className='shadow-lg dark:bg-gray-800 bg-white relative rounded-lg w-full py-2 uppercase dark:group-hover:text-cyan-400 group-hover:scale-110 hover:font-semibold hover:dark:text-cyan-300'>Visit</button></a>
       </div>
       <div className="relative group w-full">
       <div className=" NEON dark:absolute dark:-inset-0.5 rounded-lg dark:blur opacity-75 duration-1000 group-hover:duration-200 bg-gradient-to-r from-blue-600 to-cyan-300 group-hover:scale-110 hover:font-semibold hover:dark:text-cyan-300 group-hover:opacity-100"></div>
-      <a href={`${slides[currentIndex].sourceUrl}`} target='_blank'><button className='shadow-lg dark:bg-gray-800 bg-white relative rounded-lg w-full py-2 uppercase dark:group-hover:text-cyan-400 group-hover:scale-110 hover:font-semibold dark:hover:dark:text-cyan-300'>Source</button></a>
+      <a href={`${slides[currentIndex].sourceUrl}`} target='_blank' rel='noReferrer'><button className='shadow-lg dark:bg-gray-800 bg-white relative rounded-lg w-full py-2 uppercase dark:group-hover:text-cyan-400 group-hover:scale-110 hover:font-semibold dark:hover:dark:text-cyan-300'>Source</button></a>
       </div>
     </div>
     <div className='xl:h-[500px] xs:h-[300px] w-5/6 mx-auto rounded-lg dark:bg-gray-800 bg-white text-center'>
