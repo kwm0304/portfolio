@@ -59,7 +59,7 @@ const Carousel = () => {
   }
 
   return(
-<div className="grid xl:grid-cols-2 xs:grid-cols-1 mb-6 xl:w-[1280px] xl:h-[760px] xs:w-full xl:w-full  text-gray-600 bg-neutral-200 dark:bg-[#444654] dark:border-gray-900/50 border-b dark:text-gray-100 rounded-lg dark:text-cyan-400 ">
+<div className="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 xs:grid-cols-1 mb-6 xl:w-[1280px] xl:h-[760px] xs:w-full xl:w-full  text-gray-600 bg-neutral-200 dark:bg-[#444654] dark:border-gray-900/50 border-b dark:text-gray-100 rounded-lg dark:text-cyan-400 ">
   <div className="IMG xl:pl-12 xs:px-2 h-full flex items-center group overflow-hidden xl:py-4">
     <img src={`${slides[currentIndex].image}`} className='w-full rounded-lg xs:pt-4 '/>
     <div className=" group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 dark:text-cyan-400">
