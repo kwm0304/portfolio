@@ -1,16 +1,26 @@
 import { useState } from 'react'
 //icons
 import { BsChevronCompactLeft, BsChevronCompactRight, BsStripe, BsFillDatabaseFill } from 'react-icons/bs'
-import { SiJavascript, SiReact, SiNodedotjs, SiMongodb, SiGraphql, SiApollographql  } from 'react-icons/si'
+import { SiJavascript, SiReact, SiNodedotjs, SiMongodb, SiGraphql, SiApollographql, SiHandlebarsdotjs, SiTailwindcss, SiBootstrap, SiMysql  } from 'react-icons/si'
+import { TbBrandNextjs } from 'react-icons/tb'
 //pics
 import ecommerce from '../assets/shopshop.png'
 import scheduler from '../assets/scheduler.png'
 import sfc from '../assets/sfc.png'
 import sideEffects from '../assets/sideEffects.png'
+import me from '../assets/me.jpg'
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const slides = [
+    {
+      image: me, 
+      title:"About Me", 
+      description: "Hello! I'm Kenan, an enthusiastic and hardworking web developer from Charlotte, NC. I'm passionate about learning and problem solving, and I'm excited to start my career in web development. With a strong foundation in front-end and back-end devlopement, I create responsive and user friendly websites. I'm also experienced with frameworks like ReactJS and NextJS, enabling me more dynamic web applications. I thrive on challenges and bring a meticulous attention to detail to every project. I constantly seek new learning opportunities and stay up-to-date with the latest trends and technologies. In addition to technical skills, I value effective communication and collaboration. I enjoy working in teams and contributing my ideas to achieve remarkable reslts. Outside of web development I am an avid learner and enjoy exploring diverse topics. I'm actively seeking entry-level web developer positions to contribute my skills and enthusiasm in creating exceptional web experiences.", 
+      tags: [< SiJavascript />, <SiReact />, <BsStripe />, <SiNodedotjs /> , <SiMongodb />, <SiGraphql />, <SiApollographql />, <TbBrandNextjs />, <BsFillDatabaseFill />, <SiMysql />, <SiTailwindcss />, <SiBootstrap />],
+      visitUrl: 'https://kenanmckenzie.com/',
+      sourceUrl: 'https://github.com/kwm0304/'
+    },
     {
       image: ecommerce, 
       title:'E-commerce', 
@@ -82,7 +92,7 @@ const Carousel = () => {
     </div>
     <div className='xl:h-[500px] xs:h-[300px] w-5/6 mx-auto rounded-lg dark:bg-gray-800 bg-white text-center'>
       <h3 className='xl:text-2xl xl:mt-4 xs:mt-1 uppercase font-semibold text-gray-600 dark:text-lime-400'>{slides[currentIndex].title}</h3>
-      <p className='mt-24 mx-8'>{slides[currentIndex].description}</p>
+      <p className='mt-8 mx-8'>{slides[currentIndex].description}</p>
     </div>
     <div className='w-5/6 rounded-lg grid grid-cols-4  xl:gap-4 xs:gap-2 xs:py-3 justify-items-center  content-center bg-white dark:bg-gray-800 dark:text-lime-400  xs:text-base xl:text-xl'>
       {slides[currentIndex].tags.map((tag, index) => (
