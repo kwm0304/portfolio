@@ -59,9 +59,9 @@ const Carousel = () => {
   }
 
   return(
-<div className="grid grid-cols-2  mb-6 w-[1280px] h-[760px] text-gray-600 bg-neutral-200 dark:bg-[#444654] dark:border-gray-900/50 border-b dark:text-gray-100 rounded-lg dark:text-cyan-400 ">
-  <div className="IMG pl-12 h-full flex items-center group">
-    <img src={`${slides[currentIndex].image}`} className='w-full rounded-lg'/>
+<div className="grid xl:grid-cols-2 xs:grid-cols-1 mb-6 xl:w-[1280px] xl:h-[760px] xs:w-full xl:w-full  text-gray-600 bg-neutral-200 dark:bg-[#444654] dark:border-gray-900/50 border-b dark:text-gray-100 rounded-lg dark:text-cyan-400 ">
+  <div className="IMG xl:pl-12 xs:px-2 h-full flex items-center group overflow-hidden xl:py-4">
+    <img src={`${slides[currentIndex].image}`} className='w-full rounded-lg xs:pt-4 '/>
     <div className=" group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 dark:text-cyan-400">
       <BsChevronCompactLeft onClick={prevSlide} size={30} className='group-hover:scale-110 font-bold' />
     </div>
@@ -80,11 +80,11 @@ const Carousel = () => {
       <a href={`${slides[currentIndex].sourceUrl}`} target='_blank'><button className='shadow-lg dark:bg-gray-800 bg-white relative rounded-lg w-full py-2 uppercase dark:group-hover:text-cyan-400 group-hover:scale-110 hover:font-semibold dark:hover:dark:text-cyan-300'>Source</button></a>
       </div>
     </div>
-    <div className='h-[500px] w-5/6 mx-auto rounded-lg dark:bg-gray-800 bg-white text-center'>
-      <h3 className='text-2xl mt-4 uppercase font-semibold text-gray-600 dark:text-lime-400'>{slides[currentIndex].title}</h3>
+    <div className='xl:h-[500px] xs:h-[300px] w-5/6 mx-auto rounded-lg dark:bg-gray-800 bg-white text-center'>
+      <h3 className='xl:text-2xl xl:mt-4 xs:mt-1 uppercase font-semibold text-gray-600 dark:text-lime-400'>{slides[currentIndex].title}</h3>
       <p className='mt-24 mx-8'>{slides[currentIndex].description}</p>
     </div>
-    <div className='w-5/6 rounded-lg grid grid-cols-4  gap-4  justify-items-center  content-center bg-white dark:bg-gray-800 dark:text-lime-400  text-xl'>
+    <div className='w-5/6 rounded-lg grid grid-cols-4  xl:gap-4 xs:gap-2 xs:py-3 justify-items-center  content-center bg-white dark:bg-gray-800 dark:text-lime-400  xs:text-base xl:text-xl'>
       {slides[currentIndex].tags.map((tag, index) => (
         <span key={index} className=''>{tag}</span>
       ))}
