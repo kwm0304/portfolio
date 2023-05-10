@@ -20,14 +20,13 @@ body {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
-  margin-left: 37%;
+  
 }
 .neon {
   font-family: neon;
   color: #22d3ee;
   font-size: 3vw;
-  line-height: 2.112vw;
+  line-height: 2.11vw;
   text-shadow: 0 0 3vw #2356FF;
-  margin-right: 55%;
   padding-top: .25em;
 }
